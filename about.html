@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6ac3910c4e.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+
+<title>3D Web Page</title>
+</head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="logo">
+        <a class="navbar-brand" href="index.html">
+        <img src="assets/images/Logo.png" alt="logo">
+        </a>
+        </div>
+        
+
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse ">
+        <span class="navbar-toggler-icon"></span>
+  
+      </button>
+  
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+      
+        <li class="nav-item">
+          <a class="nav-link active" href="#" style="font-weight: bold;">About</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">Menu</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="coke.html">Drinks</a>
+            <a class="dropdown-item" href="cake.html">Cake</a>
+            <a class="dropdown-item" href="burger.html">Food</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="#footer">Contact</a>
+        </li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <br>
+
+    <div class="container-fluid about-content">
+        <section class="page-intro">
+          <h1>Inside the 3D Taste Experience</h1>
+          <p>This mini restaurant turns a simple menu into a hands-on digital visit. Each dish has its own 3D scene, so you can look around the object and use on-screen controls to change what you see.</p>
+          <p class="explore-hint"><strong>Start exploring:</strong> Choose Drinks, Dessert, or Food from the Menu at the top of the page. On each item page, drag to rotate the view and try the buttons beside the model.</p>
+        </section>
+        <h2>About</h2>
+        <p>This project is an interactive 3D mini restaurant website. It allows users to explore different food items such as a Coca-Cola drink, a cake dessert, and a burger meal in 3D.<Br>
+           The aim of the project is to combine web design with 3D modelling and interactive features to create an engaging user experience.</p>
+
+        <h2>3D models</h2>
+        <p>For this website, I created and integrated three 3D models: a Coca-Cola can, a cake, and a burger.<Br>
+The models were designed using Blender and exported for use on the web.<Br>
+
+The Coca-Cola model includes multiple states such as normal, opened, and recycled versions.<Br>
+The cake model includes interactive elements such as adding strawberries and candles.<Br>
+The burger model allows customization by adding fries and rotating the model.<Br>
+
+All models are rendered in the browser using Three.js.</p>
+        <div class="image-container">
+        <img src="assets/images/cok can.png" style="width: 525px; height: 300px;"></img>
+        <img src="assets/images/burger.png" style="width: 525px; height: 300px;"></img>
+        <img src="assets/images/cake.png" style="width: 525px; height: 300px;"></img>
+        </div>
+        <br>
+
+        <h2>Design</h2>
+        <p>The website was designed as a mini restaurant interface with a clean and consistent layout.<Br>
+I used HTML, CSS, and Bootstrap to structure the pages and create a responsive design.<Br>
+
+The homepage presents three main categories (Drink, Dessert, Food), each linking to an interactive 3D page.<Br>
+The layout adapts to different screen sizes, ensuring usability on both desktop and mobile devices.</p>
+
+        <h2>Integration</h2>
+        <p>The project integrates multiple types of media:<Br>
+3D models using Three.js<Br>
+Images on the homepage and About page<Br>
+Logo which is designed using Canva<Br>
+Audio to enhance interaction (e.g. opening the can, crush the can , playing happy birthday song when adding candle to the cake)<Br>
+Text descriptions to guide users<Br>
+Animations such as opening the can ,crush it, add strawberries and candle, add fries and rotating models<Br>
+These elements are combined to create a complete interactive web experience.</p>
+
+        <h2>Interaction</h2>
+        <p>The website includes several interactive features:<Br>
+
+Users can rotate and explore 3D models using orbit controls<Br>
+Buttons allow actions such as:<Br>
+Opening the can and crush it<Br>
+Switching between models<Br>
+Toggling wireframe view<Br>
+Rotate model<Br>
+Adding strawberries and candles to the cake<Br>
+Customizing the burger by adding fries<Br>
+ <strong>(Note: you should switch model when you moving from function to other such as from open to crush)</strong><br>
+
+These interactions allow users to manipulate and explore 3D objects directly in the browser.</p>
+
+        <h2>Implementation</h2>
+        <p><h5>Technology Used</h5>
+The project was developed using:<Br>
+HTML, CSS, JavaScript<Br>
+Bootstrap for layout<Br>
+Blender for 3D modelling<Br>
+Three.js for rendering and interaction<br>
+Canva for designing the logo<br>
+<h5>Rationale of Technology</h5>
+Blender was used because it allows creation and animation of detailed 3D models.<Br>
+Three.js was chosen because it enables real-time rendering and interaction of 3D objects in web browsers.<Br>
+Bootstrap was used to quickly create a responsive and structured layout.<Br>
+<h5>Testing Strategy</h5>
+I tested the website by:<Br>
+
+Checking all navigation links between pages<Br>
+Testing all buttons and interactions<Br>
+Verifying that 3D models load correctly and all animations work well<Br>
+Testing responsiveness using browser developer tools including different sizes(576px, 768px, 992px)</p>
+
+        <h2>Deeper understanding</h2>
+        <p>I learned how to export 3D models from Blender and integrate them into a web application using Three.js.<Br>
+I understood how lighting and camera positioning affect the appearance of 3D models.<Br>
+I learned how responsive design must include both layout and 3D canvas adjustments.<Br>
+I gained experience in creating interactive web experiences using JavaScript and 3D libraries.</p>
+
+        <h2>What to explore</h2>
+        <p>Each page offers a different kind of interaction. Open the cola can and try its alternate or recycling states; add fruit or a candle to the cake; or add fries beside the burger. The wireframe control reveals the model's underlying 3D structure, while rotation lets you inspect the scene from another angle.</p>
+
+        <h2>Implementation & publication</h2>
+        <p>This About page includes all required evidence of the project development.
+The website was successfully tested and runs correctly in the browser.
+All pages load properly, and the 3D models and interactions function as expected.<br>
+I have zipped my website and I have tested that my folder can be opened in Visual Studio Code when unzipped and works as it should.</p>
+    </div>
+
+
+
+        <footer class="site-footer" id="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" aria-label="3D Taste Experience home">
+            <img src="assets/images/Logo.png" alt="3D Taste Experience">
+          </a>
+          <p>&copy; 2026 3D Taste Experience</p>
+        </div>
+
+        <div class="footer-contact">
+          <h2>Visit us</h2>
+          <p class="footer-line"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Al Hamra Street<br>Homs, Syria</span></p>
+        </div>
+
+        <div class="footer-contact">
+          <h2>Get in touch</h2>
+          <p class="footer-line"><i class="fab fa-whatsapp" aria-hidden="true"></i><span>0998-265-444</span></p>
+<p class="footer-note">Find us on</p>
+          <div class="footer-social" aria-label="Social media platforms">
+            <span class="footer-social-icon" role="img" aria-label="Facebook" title="Facebook">f</span>
+            <span class="footer-social-icon" role="img" aria-label="X, formerly Twitter" title="X / Twitter">𝕏</span>
+            <span class="footer-social-icon" role="img" aria-label="GitHub" title="GitHub">GH</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+ 
+  </body>
+</html>

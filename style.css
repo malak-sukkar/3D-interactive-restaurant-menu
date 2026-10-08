@@ -1,0 +1,359 @@
+/* Fonts */
+@font-face {
+    font-family: cocaColaFont;
+    src: url(assets/fonts/lokicola.ttf);
+}
+
+/* Page defaults */
+body {
+    padding-bottom: 5px;
+    background-color: rgb(245, 164, 98);
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    padding-top: 12px;
+}
+
+/* Responsive spacing values */
+:root {
+    --content-gutter: 12px;
+    --home-card-padding: 12px;
+    --home-grid-gutter: 24px;
+}
+
+/* Navigation and logo */
+.navbar.bg-dark {
+    width: 100%;
+    margin: 0;
+    padding-left: var(--content-gutter);
+    padding-right: var(--content-gutter);
+    box-sizing: border-box;
+}
+
+.navbar.bg-dark .logo {
+    margin-left: 0;
+}
+
+.logo {
+    margin-top: 2px;
+    margin-left: 20px;
+}
+
+.logo img {
+    height: auto;
+    width: 50px;
+}
+
+.nav-item {
+    margin-top: 0;
+}
+
+.dropdown-menu {
+    text-align: -webkit-left;
+    background-color: #eb9a91;
+    margin-top: 20px;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #000;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: #030303;
+    background-color: #e98074;
+}
+
+/* Homepage hero */
+.hero {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 50px;
+    background-image: url(assets/images/restaurant.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    width: calc(100% - (2 * var(--content-gutter)));
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    text-align: center;
+}
+
+/* Shared page text sections */
+.page-intro,
+.explore-guide {
+    max-width: none;
+    margin: 18px var(--content-gutter) 18px calc(var(--content-gutter) - 18px);
+    padding: 18px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.42);
+}
+
+.page-intro h1,
+.page-intro h2,
+.explore-guide h2 {
+    margin-bottom: 10px;
+}
+
+.page-intro p,
+.explore-guide p {
+    max-width: 900px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.explore-hint {
+    margin-top: 14px;
+}
+
+/* Home page cards */
+.menu-grid > .row {
+    --bs-gutter-x: var(--home-grid-gutter);
+    margin-left: calc(var(--content-gutter) - 12px - (var(--home-grid-gutter) / 2) - var(--home-card-padding));
+    margin-right: calc(var(--content-gutter) - 12px - (var(--home-grid-gutter) / 2));
+}
+
+.menu-grid .card-body {
+    padding: var(--home-card-padding);
+}
+
+/* 3D item pages */
+.main-contents .card {
+    border: 0;
+}
+
+.main-contents .card-header p {
+    line-height: 1.6;
+}
+
+html body .card-header {
+    padding: 12px var(--content-gutter);
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+/* About page */
+body > div.about-content {
+    --bs-gutter-x: 0;
+}
+
+.about-content > h2,
+.about-content > p {
+    margin-left: 0;
+    margin-right: var(--content-gutter);
+    padding: 8px 12px;
+}
+
+/* Footer */
+.site-footer {
+    width: 100%;
+    margin-top: 24px;
+    padding: 24px var(--content-gutter);
+    box-sizing: border-box;
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+.footer-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 22px;
+    margin: 0;
+}
+
+.footer-brand img {
+    display: block;
+    width: 60px;
+    height: auto;
+    margin-bottom: 14px;
+}
+
+.footer-brand p,
+.footer-contact p {
+    margin: 0 0 10px;
+    line-height: 1.6;
+}
+
+.footer-contact h2 {
+    margin: 4px 0 14px;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.footer-line {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.footer-line i {
+    width: 18px;
+    margin-top: 4px;
+    color: #e98074;
+}
+
+.footer-note {
+    color: rgba(248, 249, 250, 0.7);
+    font-size: 0.9rem;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-social-icon {
+    display: inline-flex;
+    width: 36px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(248, 249, 250, 0.35);
+    border-radius: 50%;
+    color: #f8f9fa;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* Tablet layout */
+@media (min-width: 576px) {
+    :root {
+        --content-gutter: 60px;
+        --home-card-padding: 16px;
+        --home-grid-gutter: 12px;
+    }
+
+    body {
+        background-color: rgb(202, 181, 181);
+    }
+
+    .logo {
+        margin-top: 4px;
+    }
+
+    .logo img {
+        height: auto;
+        width: 60px;
+    }
+
+    .card {
+        border: 0 solid rgba(0, 0, 0, 0.125);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgb(202, 181, 181);
+    }
+
+    .page-intro,
+    .explore-guide {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        margin-left: calc(var(--content-gutter) - 18px);
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .about-content > h2,
+    .about-content > p {
+        margin-left: calc(var(--content-gutter) - 12px);
+        padding-left: 12px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    :root {
+        --content-gutter: 100px;
+        --home-card-padding: 20px;
+    }
+
+    body {
+        background-color: rgb(218, 216, 148);
+    }
+
+    .card {
+        background-color: rgb(218, 216, 148);
+    }
+
+    .page-intro,
+    .explore-guide {
+        margin-left: calc(var(--content-gutter) - 26px);
+        padding: 22px 26px;
+    }
+
+    html body .card-header {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .about-content > h2,
+    .about-content > p {
+        margin-left: calc(var(--content-gutter) - 16px);
+        padding: 8px 16px;
+    }
+
+    .footer-inner {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 32px;
+    }
+
+    .site-footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+/* Desktop layout */
+@media (min-width: 992px) {
+    :root {
+        --home-grid-gutter: 24px;
+    }
+
+    body {
+        background-color: rgb(185, 185, 178);
+    }
+
+    .card {
+        background-color: rgb(185, 185, 178);
+    }
+
+    .logo img {
+        height: auto;
+        width: 80px;
+    }
+
+}
+
+

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_button.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/6ac3910c4e.js" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+ 
+
+<title>3D Web Page</title>
+</head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="logo">
+        <a class="navbar-brand" href="index.html">
+        <img src="assets/images/Logo.png" alt="logo">
+        </a>
+        </div>
+        
+
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse ">
+        <span class="navbar-toggler-icon"></span>
+  
+      </button>
+  
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+      
+        <li class="nav-item">
+          <a class="nav-link active" href="about.html">About</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">Menu</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="coke.html">Drinks</a>
+            <a class="dropdown-item" href="cake.html">Dessert</a>
+            <a class="dropdown-item" href="burger.html">Food</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="#footer">Contact</a>
+        </li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <br>
+    <div class="container-fluid main-contents">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card" style="position: relative;">
+            <div class="card-header">
+              <h1>Take a closer look at a classic cola can</h1>
+              <p class="mb-0">Explore the can from every angle, then try its opening, alternate model, and recycling animations.</p>
+            </div>
+          </div>
+
+          <div class="card-body custom-layout">
+            <div class="model-section">
+              <canvas id="threeContainer"></canvas>
+            </div>
+            <div class="sidebar-controls">
+            <button id="btn">Open Can</button>
+            <button id="toggleWireframe">Toggle Wireframe</button>
+            <button id="rotate">Rotate View</button>
+            <button id="switchModel">Switch Model</button>
+            <button id="playSecondModelAnimation">Recycle it</button>
+            
+            </div>
+          </div>
+
+          <section class="explore-guide">
+            <h2>Explore the drink</h2>
+            <p>Drag the scene to turn the can and inspect its shape and label. Use the controls to open it, reveal the model as a wireframe, switch between versions, or play the recycling animation. Switching models can help reset the scene before trying another action.</p>
+          </section>
+        </div>
+      </div>
+
+    </div>
+    
+    
+    
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/106/three.min.js'></script>
+      <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/2666677/OrbitControls.js'></script>
+      <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/2666677/GLTFLoader.js'></script>
+      <script src="./coke.js"></script>
+
+    <br>
+
+          <footer class="site-footer" id="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" aria-label="3D Taste Experience home">
+            <img src="assets/images/Logo.png" alt="3D Taste Experience">
+          </a>
+          <p>&copy; 2026 3D Taste Experience</p>
+        </div>
+
+        <div class="footer-contact">
+          <h2>Visit us</h2>
+          <p class="footer-line"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Al Hamra Street<br>Homs, Syria</span></p>
+        </div>
+
+        <div class="footer-contact">
+          <h2>Get in touch</h2>
+          <p class="footer-line"><i class="fab fa-whatsapp" aria-hidden="true"></i><span>0998-265-444</span></p>
+<p class="footer-note">Find us on</p>
+          <div class="footer-social" aria-label="Social media platforms">
+            <span class="footer-social-icon" role="img" aria-label="Facebook" title="Facebook">f</span>
+            <span class="footer-social-icon" role="img" aria-label="X, formerly Twitter" title="X / Twitter">𝕏</span>
+            <span class="footer-social-icon" role="img" aria-label="GitHub" title="GitHub">GH</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+      
+
+
+   </div>
+
+  </body>
+</html>
